@@ -9,7 +9,7 @@ RUN pip install --upgrade pip
 
 RUN mkdir /app
 COPY reboot.py /app/reboot.py
-COPY mnsockd /app/mnsockd
+COPY key /app/key
 WORKDIR app 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
